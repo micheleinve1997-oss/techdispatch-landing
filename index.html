@@ -27,7 +27,7 @@
         <a href="#planner">Planner</a>
         <a href="#roadmap">Roadmap</a>
       </nav>
-      <a class="header-cta" href="#contatto">Richiedi demo</a>
+      <a class="header-cta" href="#contatto">Richiedi info</a>
     </header>
 
     <main id="top">
@@ -161,15 +161,34 @@
       </section>
 
       <section class="contact" id="contatto">
-        <div>
-          <p class="eyebrow">Landing separata</p>
-          <h2>Presenta TechDispatch senza mischiarlo con l'app gestionale.</h2>
+        <div class="contact-copy">
+          <p class="eyebrow dark">Richiedi info</p>
+          <h2>Vuoi capire se TechDispatch va bene per la tua organizzazione?</h2>
           <p>
-            Questa pagina e un progetto autonomo: puo essere pubblicata su un dominio
-            dedicato e collegata all'app solo quando decidi tu.
+            Lascia qualche dettaglio su squadra, tecnici e pianificazione attuale.
+            La richiesta rimane separata dall'app gestionale e serve solo per avviare il confronto.
           </p>
         </div>
-        <a class="primary-btn" href="mailto:info@techdispatch.it">Contattaci</a>
+        <form class="info-card" action="mailto:info@techdispatch.it" method="post" enctype="text/plain">
+          <h3>Richiedi info</h3>
+          <label>
+            <span>Nome e cognome</span>
+            <input name="Nome e cognome" type="text" placeholder="Nome e cognome" required />
+          </label>
+          <label>
+            <span>Email aziendale</span>
+            <input name="Email aziendale" type="email" placeholder="Email aziendale" required />
+          </label>
+          <label>
+            <span>Azienda</span>
+            <input name="Azienda" type="text" placeholder="Azienda" />
+          </label>
+          <label>
+            <span>Messaggio</span>
+            <textarea name="Messaggio" placeholder="Quanti tecnici gestite e come pianificate oggi?" rows="5"></textarea>
+          </label>
+          <button type="submit">Invia richiesta</button>
+        </form>
       </section>
     </main>
 
