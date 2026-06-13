@@ -8,9 +8,9 @@ Apri `index.html` nel browser.
 
 ## Collegamento Google Sheet
 
-Il form e gia pronto per compilare un Google Sheet. Serve solo creare il Web App Google e incollare il suo URL dentro `index.html` nel campo `data-endpoint` del form.
+Il form e gia pronto per compilare il Google Sheet con ID `1PD8Er_5fIeQOuHXfCB27cG7nzHqiprQfmVj3VQQ1ky0`. Serve solo creare il Web App Google e incollare il suo URL dentro `index.html` nel campo `data-endpoint` del form.
 
-1. Apri Google Sheets e crea un file chiamato `TechDispatch - Richieste info`.
+1. Apri il Google Sheet collegato all ID `1PD8Er_5fIeQOuHXfCB27cG7nzHqiprQfmVj3VQQ1ky0`.
 2. Crea le colonne della prima riga usando `google-sheet-template.csv`, oppure lascia fare allo script: le crea automaticamente al primo invio.
 3. Vai su `Estensioni` -> `Apps Script`.
 4. Incolla il contenuto di `google-apps-script.gs`.

@@ -1,3 +1,4 @@
+const SPREADSHEET_ID = "1PD8Er_5fIeQOuHXfCB27cG7nzHqiprQfmVj3VQQ1ky0";
 const SHEET_NAME = "Richieste info";
 const HEADERS = [
   "Data invio",
@@ -45,7 +46,7 @@ function parseBody_(e) {
 }
 
 function getOrCreateSheet_() {
-  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
   let sheet = spreadsheet.getSheetByName(SHEET_NAME);
 
   if (!sheet) {
