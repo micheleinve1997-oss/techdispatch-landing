@@ -116,12 +116,12 @@
             <div class="job-card urgent">
               <small>INT-0041</small>
               <b>Caldaia ferma</b>
-              <span>2h lavoro · 0.3h viaggio</span>
+              <span>2h lavoro &middot; 0.3h viaggio</span>
             </div>
             <div class="job-card">
               <small>INT-0045</small>
               <b>Manutenzione UTA</b>
-              <span>1.5h lavoro · 0.5h viaggio</span>
+              <span>1.5h lavoro &middot; 0.5h viaggio</span>
             </div>
           </div>
           <div class="board-row">
@@ -129,7 +129,7 @@
             <div class="job-card">
               <small>INT-0047</small>
               <b>Verifica quadro</b>
-              <span>1h lavoro · 0.2h viaggio</span>
+              <span>1h lavoro &middot; 0.2h viaggio</span>
             </div>
             <div class="empty-slot">Slot disponibile</div>
           </div>
@@ -169,24 +169,26 @@
             La richiesta rimane separata dall'app gestionale e serve solo per avviare il confronto.
           </p>
         </div>
-        <form class="info-card" action="mailto:info@techdispatch.it" method="post" enctype="text/plain">
+        <form class="info-card" id="info-form" data-endpoint="">
           <h3>Richiedi info</h3>
           <label>
             <span>Nome e cognome</span>
-            <input name="Nome e cognome" type="text" placeholder="Nome e cognome" required />
+            <input name="nome" type="text" placeholder="Nome e cognome" autocomplete="name" required />
           </label>
           <label>
             <span>Email aziendale</span>
-            <input name="Email aziendale" type="email" placeholder="Email aziendale" required />
+            <input name="email" type="email" placeholder="Email aziendale" autocomplete="email" required />
           </label>
           <label>
             <span>Azienda</span>
-            <input name="Azienda" type="text" placeholder="Azienda" />
+            <input name="azienda" type="text" placeholder="Azienda" autocomplete="organization" />
           </label>
           <label>
             <span>Messaggio</span>
-            <textarea name="Messaggio" placeholder="Quanti tecnici gestite e come pianificate oggi?" rows="5"></textarea>
+            <textarea name="messaggio" placeholder="Quanti tecnici gestite e come pianificate oggi?" rows="5"></textarea>
           </label>
+          <input name="origine" type="hidden" value="techdispatch-landing" />
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           <button type="submit">Invia richiesta</button>
         </form>
       </section>
@@ -196,5 +198,7 @@
       <span>TechDispatch</span>
       <span>Landing page separata</span>
     </footer>
+    <script src="./script.js" defer></script>
   </body>
 </html>
+
