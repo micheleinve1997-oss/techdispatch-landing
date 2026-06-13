@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechDispatch | Pianificazione interventi tecnici</title>
+    <meta
+      name="description"
+      content="TechDispatch organizza clienti, tecnici, interventi e pianificazione in un unico flusso operativo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TechDispatch home">
+        <span class="brand-mark">T</span>
+        <span>TechDispatch</span>
+      </a>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="#piattaforma">Piattaforma</a>
+        <a href="#planner">Planner</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <a class="header-cta" href="#contatto">Richiedi demo</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Dispatch tecnico, clienti e interventi</p>
+          <h1>TechDispatch</h1>
+          <p class="hero-copy">
+            La landing separata per presentare una piattaforma che trasforma anagrafiche,
+            tecnici e richieste operative in una pianificazione leggibile, modificabile
+            e pronta per il lavoro sul campo.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#contatto">Parliamone</a>
+            <a class="secondary-btn" href="#planner">Scopri il planner</a>
+          </div>
+        </div>
+        <div class="hero-strip" aria-label="Metriche prodotto">
+          <div>
+            <strong>01</strong>
+            <span>Anagrafiche importabili</span>
+          </div>
+          <div>
+            <strong>02</strong>
+            <span>Tecnici e disponibilita</span>
+          </div>
+          <div>
+            <strong>03</strong>
+            <span>Interventi pianificati</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="piattaforma">
+        <div class="section-heading">
+          <p class="eyebrow dark">Piattaforma</p>
+          <h2>Dati collegati, operativita piu chiara.</h2>
+          <p>
+            TechDispatch nasce per aziende che gestiscono interventi tecnici, manutenzioni,
+            ticket e squadre sul territorio. Ogni modulo alimenta il successivo.
+          </p>
+        </div>
+        <div class="module-grid">
+          <article>
+            <span class="icon">CL</span>
+            <h3>Clienti</h3>
+            <p>Importazione guidata, campi anagrafici, sedi e controlli sui duplicati.</p>
+          </article>
+          <article>
+            <span class="icon">TC</span>
+            <h3>Tecnici</h3>
+            <p>Competenze, ferie, sede di partenza, disponibilita e vincoli operativi.</p>
+          </article>
+          <article>
+            <span class="icon">IN</span>
+            <h3>Interventi</h3>
+            <p>Richieste manuali, manutenzioni, ticket e dettagli sempre consultabili.</p>
+          </article>
+          <article>
+            <span class="icon">PL</span>
+            <h3>Pianificatore</h3>
+            <p>Proposte automatiche, viaggio stimato e correzione manuale drag and drop.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="planner-section" id="planner">
+        <div class="planner-copy">
+          <p class="eyebrow">Algoritmo operativo</p>
+          <h2>Il sistema propone. L'operatore decide.</h2>
+          <p>
+            L'algoritmo valuta disponibilita, vincoli, priorita, zona, durata e viaggio
+            stimato. La pianificazione rimane controllabile, spostabile e leggibile.
+          </p>
+        </div>
+        <div class="planner-board" aria-label="Esempio di pianificazione">
+          <div class="board-row board-head">
+            <span>Tecnico</span>
+            <span>Lunedi</span>
+            <span>Martedi</span>
+          </div>
+          <div class="board-row">
+            <strong>Marco R.</strong>
+            <div class="job-card urgent">
+              <small>INT-0041</small>
+              <b>Caldaia ferma</b>
+              <span>2h lavoro · 0.3h viaggio</span>
+            </div>
+            <div class="job-card">
+              <small>INT-0045</small>
+              <b>Manutenzione UTA</b>
+              <span>1.5h lavoro · 0.5h viaggio</span>
+            </div>
+          </div>
+          <div class="board-row">
+            <strong>Laura B.</strong>
+            <div class="job-card">
+              <small>INT-0047</small>
+              <b>Verifica quadro</b>
+              <span>1h lavoro · 0.2h viaggio</span>
+            </div>
+            <div class="empty-slot">Slot disponibile</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap" id="roadmap">
+        <div class="section-heading">
+          <p class="eyebrow dark">Roadmap</p>
+          <h2>Una direzione concreta.</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>1</span>
+            <h3>Agenda ufficiale</h3>
+            <p>Conferma finale della proposta e salvataggio della pianificazione definitiva.</p>
+          </div>
+          <div>
+            <span>2</span>
+            <h3>Distanze reali</h3>
+            <p>Routing con mappe e coordinate invece di sole stime da CAP e citta.</p>
+          </div>
+          <div>
+            <span>3</span>
+            <h3>Fasce orarie</h3>
+            <p>Finestre mattina/pomeriggio, preferenze cliente e vincoli di appuntamento.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contatto">
+        <div>
+          <p class="eyebrow">Landing separata</p>
+          <h2>Presenta TechDispatch senza mischiarlo con l'app gestionale.</h2>
+          <p>
+            Questa pagina e un progetto autonomo: puo essere pubblicata su un dominio
+            dedicato e collegata all'app solo quando decidi tu.
+          </p>
+        </div>
+        <a class="primary-btn" href="mailto:info@techdispatch.it">Contattaci</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>TechDispatch</span>
+      <span>Landing page separata</span>
+    </footer>
+  </body>
+</html>
